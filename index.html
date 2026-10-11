@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Gadgets, PC y Tecnología</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-gradient" href="#"><i class="fa-solid fa-microchip me-2"></i>TechStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="https://wa.me/525519389472" target="_blank" class="btn btn-success btn-sm px-3 rounded-pill">
+                            <i class="fa-brands fa-whatsapp me-1"></i> Soporte
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero (Impactante) -->
+    <header class="hero-section text-white text-center d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-primary mb-3 px-3 py-2 rounded-pill text-uppercase">Lo último en tecnología</span>
+                    <h1 class="display-4 fw-bold mb-3">Potencia tu mundo con los mejores gadgets</h1>
+                    <p class="lead mb-4">Encuentra equipo de PC avanzado, Smart TVs, componentes y accesorios exclusivos con garantía directa.</p>
+                    <a href="#productos" class="btn btn-light btn-lg px-4 py-2 fw-semibold rounded-pill shadow me-2">Ver Productos</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Categorías Destacadas</h2>
+                <p class="text-muted">Equipos diseñados para elevar tu productividad y entretenimiento</p>
+            </div>
+            <div class="row g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3 text-primary"><i class="fa-solid fa-desktop fa-3x"></i></div>
+                            <h4 class="card-title fw-bold">Equipos PC & Gaming</h4>
+                            <p class="card-text text-muted">PCs armadas, tarjetas gráficas, procesadores y componentes de alto rendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3 text-primary"><i class="fa-solid fa-tv fa-3x"></i></div>
+                            <h4 class="card-title fw-bold">Smart TVs</h4>
+                            <p class="card-text text-muted">Pantallas 4K, OLED y sistemas de sonido envolvente para tu hogar.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3 text-primary"><i class="fa-solid fa-headphones fa-3x"></i></div>
+                            <h4 class="card-title fw-bold">Gadgets & Accesorios</h4>
+                            <p class="card-text text-muted">Smartwatches, teclados mecánicos, audífonos y cargadores rápidos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/525519389472?text=Hola,%20me%20interesa%20obtener%20información%20sobre%20sus%20productos" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-2">TechStore</h5>
+                    <p class="text-white-50 mb-0">Sucursales en Atlacomulco y Acambay somos proveedores directos</p>
+                </div>
+                <div class="col-md-5 text-md-end text-center">
+                    <!-- Botón WhatsApp -->
+                    <a href="https://wa.me/525519389472" target="_blank" class="btn btn-success me-2 mb-2">
+                        <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                    </a>
+                    <!-- Botón Facebook (Agrega tu link donde dicen las comillas) -->
+                    <a href="AQUÍ_VA_TU_LINK_DE_FACEBOOK" target="_blank" class="btn btn-primary mb-2">
+                        <i class="fa-brands fa-facebook-f me-1"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="text-white-50 small mb-0">&copy; 2026 TechStore. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

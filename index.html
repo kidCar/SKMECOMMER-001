@@ -15,24 +15,40 @@
 </head>
 <body>
 
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-gradient" href="#"><i class="fa-solid fa-microchip me-2"></i>TechStore</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <!-- Barra de Navegación Mejorada con las secciones solicitadas -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+        <div class="container-fluid px-4">
+            <!-- Logo / Marca -->
+            <a class="navbar-brand fw-bold text-gradient me-4" href="index.html">
+                <i class="fa-solid fa-microchip me-2"></i>TechStore
+            </a>
+
+            <!-- Botón responsive (hamburguesa) -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="https://wa.me/525519389472" target="_blank" class="btn btn-success btn-sm px-3 rounded-pill">
-                            <i class="fa-brands fa-whatsapp me-1"></i> Soporte
-                        </a>
-                    </li>
+
+            <!-- Enlaces del menú y Buscador -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-lg-items-center mx-auto">
+                    <li class="nav-item"><a class="nav-link active px-2" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#lista-precios">Lista de precios</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#sucursales">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 fw-semibold text-warning" href="#cotizar-ram">COTIZAR SOPORTE <span class="badge bg-danger text-white rounded-circle">!</span></a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#garantia">Políticas de Garantía</a></li>
                 </ul>
+
+                <!-- Buscador Integrado -->
+                <form class="d-flex align-items-center search-form mt-3 mt-lg-0" role="search" onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm rounded-pill ps-3" type="search" placeholder="Buscar productos..." aria-label="Buscar">
+                        <button class="btn btn-outline-light btn-sm rounded-circle ms-2 search-btn" type="submit" aria-label="Buscar productos">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </nav>
@@ -45,7 +61,7 @@
                     <span class="badge bg-primary mb-3 px-3 py-2 rounded-pill text-uppercase">Lo último en tecnología</span>
                     <h1 class="display-4 fw-bold mb-3">Potencia tu mundo con los mejores gadgets</h1>
                     <p class="lead mb-4">Encuentra equipo de PC avanzado, Smart TVs, componentes y accesorios exclusivos con garantía directa.</p>
-                    <a href="#productos" class="btn btn-light btn-lg px-4 py-2 fw-semibold rounded-pill shadow me-2">Ver Productos</a>
+                    <a href="productos.html" class="btn btn-light btn-lg px-4 py-2 fw-semibold rounded-pill shadow me-2">Ver Productos</a>
                 </div>
             </div>
         </div>
@@ -93,13 +109,70 @@
         </div>
     </section>
 
+    <section id="lista-precios" class="store-section price-section">
+        <div class="container">
+            <div class="store-section-heading">
+                <div>
+                    <p class="store-kicker">PRECIOS Y DISPONIBILIDAD</p>
+                    <h2>Lista de precios</h2>
+                    <p>Consulta existencias y precio vigente antes de tu compra.</p>
+                </div>
+                <a class="store-action" href="productos.html">Explorar catálogo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="price-list">
+                <a href="productos.html"><span><i class="fa-solid fa-computer" aria-hidden="true"></i> Equipos PC y componentes</span><span>Ver productos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></a>
+                <a href="productos.html"><span><i class="fa-solid fa-tv" aria-hidden="true"></i> Smart TVs y pantallas</span><span>Ver productos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></a>
+                <a href="productos.html"><span><i class="fa-solid fa-headphones" aria-hidden="true"></i> Gadgets y accesorios</span><span>Ver productos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cotizar-ram" class="store-section ram-section">
+        <div class="container section-split">
+            <div>
+                <p class="store-kicker">ACTUALIZA TU EQUIPO</p>
+                <h2>¿Buscas memoria RAM?</h2>
+                <p>Cuéntanos el modelo de tu equipo y la capacidad que necesitas. Te ayudamos a revisar compatibilidad, disponibilidad y precio.</p>
+            </div>
+            <a class="section-button" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20cotizar%20memoria%20RAM.%20El%20modelo%20de%20mi%20equipo%20es%3A%20" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Cotizar por WhatsApp</a>
+        </div>
+    </section>
+    
+    <section id="sucursales" class="store-section branches-section">
+        <div class="container">
+            <div class="store-section-heading">
+                <div>
+                    <p class="store-kicker">CERCA DE TI</p>
+                    <h2>Nuestras sucursales</h2>
+                    <p>Atendemos en Atlacomulco y Acambay. Contáctanos para confirmar ubicación y horarios.</p>
+                </div>
+            </div>
+            <div class="branch-list">
+                <article><i class="fa-solid fa-location-dot" aria-hidden="true"></i><div><h3>Atlacomulco</h3><p>Plaza del Emprededor, Atlacomulco, Estado de México Local #14 <br>Horario: 9:00 AM - 8:00 PM</p></div></article>                
+                <article><i class="fa-solid fa-location-dot" aria-hidden="true"></i><div><h3>Acambay</h3><p>Consulta ubicación y horario por WhatsApp.</p></div></article>
+            </div>
+        </div>
+    </section>
+
+    <section id="garantia" class="store-section warranty-section">
+        <div class="container section-split">
+            <div>
+                <p class="store-kicker">COMPRA CON CONFIANZA</p>
+                <h2>Políticas de garantía</h2>
+                <p>Las condiciones pueden variar según el producto. Contáctanos con el artículo de tu interés para conocer la cobertura y el proceso aplicable.</p>
+                <p>15 dias naturales a a partir de la fecha de compra por defectos de fabrica, no aplica por mal uso del equipo o productos dañados.</p>
+            </div>
+            <a class="store-action" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20conocer%20las%20pol%C3%ADticas%20de%20garant%C3%ADa" target="_blank" rel="noopener noreferrer">Consultar garantía <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/525519389472?text=Hola,%20me%20interesa%20obtener%20información%20sobre%20sus%20productos" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <!-- Pie de Página (Footer) -->
-    <footer class="bg-dark text-white pt-5 pb-4">
+    <footer id="contacto" class="bg-dark text-white pt-5 pb-4">
         <div class="container text-center text-md-start">
             <div class="row align-items-center">
                 <div class="col-md-7 mb-3 mb-md-0">

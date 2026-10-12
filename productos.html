@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora el catálogo de tecnología de TechStore y filtra productos por categoría.">
+    <title>Productos | TechStore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body class="catalog-page">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-gradient me-4" href="index.html">
+                <i class="fa-solid fa-microchip me-2"></i>TechStore
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-lg-items-center mx-auto">
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active px-2" aria-current="page" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html#lista-precios">Lista de precios</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html#sucursales">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 fw-semibold text-warning" href="index.html#cotizar-ram">COTIZAR SOPORTE <span class="badge bg-danger text-white rounded-circle">!</span></a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html#garantia">Políticas de Garantía</a></li>
+                </ul>
+                <form class="d-flex align-items-center search-form mt-3 mt-lg-0" role="search" onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm rounded-pill ps-3" type="search" placeholder="Buscar productos..." aria-label="Buscar">
+                        <button class="btn btn-outline-light btn-sm rounded-circle ms-2 search-btn" type="submit" aria-label="Buscar productos">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="catalog-main">
+        <div class="container-fluid catalog-container">
+            <header class="catalog-heading">
+                <div>
+                    <p class="catalog-eyebrow">TECHSTORE / CATÁLOGO</p>
+                    <h1>Encuentra tu próximo equipo</h1>
+                    <p class="catalog-intro">Tecnología para trabajar, jugar y disfrutar. Elige una categoría para explorar.</p>
+                </div>
+                <p class="catalog-count" aria-live="polite"><span id="product-count">8</span> productos</p>
+            </header>
+
+            <div class="catalog-layout">
+                <aside class="category-sidebar" aria-label="Filtros de productos">
+                    <div class="sidebar-heading">
+                        <h2>Categorías</h2>
+                        <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                    </div>
+                    <div class="category-options" role="group" aria-label="Filtrar por categoría">
+                        <button class="category-filter is-active" type="button" data-filter="all" aria-pressed="true">
+                            <span>Todos los productos</span><span class="category-total">8</span>
+                        </button>
+                        <button class="category-filter" type="button" data-filter="computacion" aria-pressed="false">
+                            <span>Computación</span><span class="category-total">2</span>
+                        </button>
+                        <button class="category-filter" type="button" data-filter="gaming" aria-pressed="false">
+                            <span>Gaming</span><span class="category-total">2</span>
+                        </button>
+                        <button class="category-filter" type="button" data-filter="pantallas" aria-pressed="false">
+                            <span>Pantallas</span><span class="category-total">2</span>
+                        </button>
+                        <button class="category-filter" type="button" data-filter="accesorios" aria-pressed="false">
+                            <span>Accesorios</span><span class="category-total">2</span>
+                        </button>
+                    </div>
+                    <a class="sidebar-contact" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> ¿Necesitas ayuda?
+                    </a>
+                </aside>
+
+                <section class="product-grid" aria-label="Catálogo de productos" id="product-grid">
+                    <article class="catalog-product" data-category="computacion">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85" alt="Laptop abierta sobre un escritorio" loading="lazy"><span class="product-tag">Computación</span></div>
+                        <div class="product-info"><h2>Laptop Pro 14</h2><p class="product-description">Rendimiento ágil con pantalla nítida para trabajo y estudio.</p><div class="price-row"><span class="old-price">$24,999 MXN</span><span class="current-price">$21,499 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Laptop%20Pro%2014" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="computacion">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=85" alt="Computadora de escritorio para alto rendimiento" loading="lazy"><span class="product-tag">Computación</span></div>
+                        <div class="product-info"><h2>PC Workstation Ryzen 7</h2><p class="product-description">Potencia confiable para creación, multitarea y proyectos exigentes.</p><div class="price-row"><span class="old-price">$32,999 MXN</span><span class="current-price">$29,499 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20PC%20Workstation%20Ryzen%207" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="gaming">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=85" alt="Monitor de computadora sobre un escritorio" loading="lazy"><span class="product-tag">Gaming</span></div>
+                        <div class="product-info"><h2>Monitor Gaming 27″ 165 Hz</h2><p class="product-description">Movimiento fluido y colores intensos para cada partida.</p><div class="price-row"><span class="old-price">$8,499 MXN</span><span class="current-price">$7,199 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Monitor%20Gaming%2027" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="gaming">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=85" alt="Componentes de computadora para gaming" loading="lazy"><span class="product-tag">Gaming</span></div>
+                        <div class="product-info"><h2>Tarjeta gráfica RTX 4060</h2><p class="product-description">Gráficos de nueva generación para jugar y crear con detalle.</p><div class="price-row"><span class="old-price">$9,999 MXN</span><span class="current-price">$8,699 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Tarjeta%20gr%C3%A1fica%20RTX%204060" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="pantallas">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=85" alt="Televisor de pantalla grande en una sala" loading="lazy"><span class="product-tag">Pantallas</span></div>
+                        <div class="product-info"><h2>Smart TV 55″ 4K UHD</h2><p class="product-description">Resolución 4K y acceso sencillo a tus plataformas favoritas.</p><div class="price-row"><span class="old-price">$13,499 MXN</span><span class="current-price">$11,999 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Smart%20TV%2055%204K" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="pantallas">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=900&q=85" alt="Pantalla de televisión en una habitación" loading="lazy"><span class="product-tag">Pantallas</span></div>
+                        <div class="product-info"><h2>Smart TV 43″ Full HD</h2><p class="product-description">Una pantalla versátil para tus series, películas y consolas.</p><div class="price-row"><span class="old-price">$8,799 MXN</span><span class="current-price">$7,599 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Smart%20TV%2043%20Full%20HD" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="accesorios">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Audífonos inalámbricos de diadema" loading="lazy"><span class="product-tag">Accesorios</span></div>
+                        <div class="product-info"><h2>Audífonos Bluetooth Studio</h2><p class="product-description">Audio envolvente y comodidad para música, llamadas y trabajo.</p><div class="price-row"><span class="old-price">$2,499 MXN</span><span class="current-price">$1,999 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Aud%C3%ADfonos%20Bluetooth%20Studio" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="accesorios">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85" alt="Teclado mecánico para computadora" loading="lazy"><span class="product-tag">Accesorios</span></div>
+                        <div class="product-info"><h2>Teclado Mecánico RGB</h2><p class="product-description">Teclas precisas, iluminación personalizable y formato compacto.</p><div class="price-row"><span class="old-price">$1,899 MXN</span><span class="current-price">$1,499 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Teclado%20Mec%C3%A1nico%20RGB" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="catalog-footer"><div class="container-fluid catalog-container"><span>© 2026 TechStore</span><a href="index.html#contacto">Contacto y sucursales</a></div></footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.category-filter');
+        const products = document.querySelectorAll('.catalog-product');
+        const productCount = document.querySelector('#product-count');
+
+        filterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.filter;
+                let visibleCount = 0;
+
+                filterButtons.forEach((filterButton) => {
+                    const isActive = filterButton === button;
+                    filterButton.classList.toggle('is-active', isActive);
+                    filterButton.setAttribute('aria-pressed', String(isActive));
+                });
+
+                products.forEach((product) => {
+                    const isVisible = category === 'all' || product.dataset.category === category;
+                    product.hidden = !isVisible;
+                    if (isVisible) visibleCount += 1;
+                });
+
+                productCount.textContent = visibleCount;
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

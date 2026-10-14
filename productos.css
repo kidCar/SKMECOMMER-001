@@ -243,6 +243,11 @@
     text-decoration: line-through;
 }
 
+.previous-price-note {
+    color: #879189;
+    font-size: 0.76rem;
+}
+
 .current-price {
     color: #16291d;
     font-size: 1.28rem;

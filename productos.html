@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="productos.css">
 </head>
 <body class="catalog-page">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg navbar-light tech-navbar sticky-top shadow-sm py-3">
         <div class="container-fluid px-4">
             <a class="navbar-brand fw-bold text-gradient me-4" href="index.html">
                 <i class="fa-solid fa-microchip me-2"></i>TechKMarket
@@ -50,7 +50,7 @@
                     <h1>Encuentra tu próximo equipo</h1>
                     <p class="catalog-intro">Tecnología para trabajar, jugar y disfrutar. Elige una categoría para explorar.</p>
                 </div>
-                <p class="catalog-count" aria-live="polite"><span id="product-count">8</span> productos</p>
+                <p class="catalog-count" aria-live="polite"><span id="product-count">19</span> productos</p>
             </header>
 
             <div class="catalog-layout">
@@ -61,19 +61,76 @@
                     </div>
                     <div class="category-options" role="group" aria-label="Filtrar por categoría">
                         <button class="category-filter is-active" type="button" data-filter="all" aria-pressed="true">
-                            <span>Todos los productos</span><span class="category-total">8</span>
+                            <span>Todos los productos</span><span class="category-total">19</span>
                         </button>
+                        <button class="category-filter" type="button" data-filter="celulares" aria-pressed="false">
+                            <span>Celulares</span><span class="category-total">0</span>
+                        </button>
+                        <div class="category-group">
+                            <div class="category-group-heading">
+                                <button class="category-filter" type="button" data-filter="group:hogar-inteligente" aria-pressed="false">
+                                    <span>Hogar Inteligente</span><span class="category-total">0</span>
+                                </button>
+                                <button class="category-expand" type="button" aria-label="Expandir Hogar Inteligente" aria-expanded="false" aria-controls="submenu-hogar-inteligente"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="category-submenu" id="submenu-hogar-inteligente" hidden>
+                                <button class="category-filter" type="button" data-filter="hogar-otros" aria-pressed="false"><span>Otros</span><span class="category-total">0</span></button>
+                            </div>
+                        </div>
+                        <div class="category-group">
+                            <div class="category-group-heading">
+                                <button class="category-filter" type="button" data-filter="group:tv" aria-pressed="false">
+                                    <span>TV</span><span class="category-total">5</span>
+                                </button>
+                                <button class="category-expand" type="button" aria-label="Expandir TV" aria-expanded="false" aria-controls="submenu-tv"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="category-submenu" id="submenu-tv" hidden>
+                                <button class="category-filter" type="button" data-filter="tv-smart" aria-pressed="false"><span>Smart TV</span><span class="category-total">5</span></button>
+                                <button class="category-filter" type="button" data-filter="tv-soportes" aria-pressed="false"><span>Soportes</span><span class="category-total">0</span></button>
+                            </div>
+                        </div>
+                        <div class="category-group">
+                            <div class="category-group-heading">
+                                <button class="category-filter" type="button" data-filter="group:memorias" aria-pressed="false">
+                                    <span>Memorias</span><span class="category-total">5</span>
+                                </button>
+                                <button class="category-expand" type="button" aria-label="Expandir Memorias" aria-expanded="false" aria-controls="submenu-memorias"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="category-submenu" id="submenu-memorias" hidden>
+                                <button class="category-filter" type="button" data-filter="memorias-usb" aria-pressed="false"><span>USB</span><span class="category-total">0</span></button>
+                                <button class="category-filter" type="button" data-filter="memorias-micro-sd" aria-pressed="false"><span>Micro SD</span><span class="category-total">5</span></button>
+                            </div>
+                        </div>
+                        <div class="category-group">
+                            <div class="category-group-heading">
+                                <button class="category-filter" type="button" data-filter="group:smartwatch" aria-pressed="false">
+                                    <span>SmartWatch</span><span class="category-total">0</span>
+                                </button>
+                                <button class="category-expand" type="button" aria-label="Expandir SmartWatch" aria-expanded="false" aria-controls="submenu-smartwatch"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="category-submenu" id="submenu-smartwatch" hidden>
+                                <button class="category-filter" type="button" data-filter="smartwatch-xiaomi" aria-pressed="false"><span>Xiaomi</span><span class="category-total">0</span></button>
+                            </div>
+                        </div>
+                        <div class="category-group">
+                            <div class="category-group-heading">
+                                <button class="category-filter" type="button" data-filter="group:accesorios" aria-pressed="false">
+                                    <span>Accesorios</span><span class="category-total">2</span>
+                                </button>
+                                <button class="category-expand" type="button" aria-label="Expandir Accesorios" aria-expanded="false" aria-controls="submenu-accesorios"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="category-submenu" id="submenu-accesorios" hidden>
+                                <button class="category-filter" type="button" data-filter="accesorios-audifonos" aria-pressed="false"><span>Audífonos</span><span class="category-total">1</span></button>
+                                <button class="category-filter" type="button" data-filter="accesorios-bocinas" aria-pressed="false"><span>Bocinas</span><span class="category-total">0</span></button>
+                                <button class="category-filter" type="button" data-filter="accesorios-alimentacion" aria-pressed="false"><span>Alimentación</span><span class="category-total">0</span></button>
+                            </div>
+                        </div>
+                        <div class="category-extra-heading">Más categorías</div>
                         <button class="category-filter" type="button" data-filter="computacion" aria-pressed="false">
-                            <span>Computación</span><span class="category-total">2</span>
+                            <span>Computación</span><span class="category-total">5</span>
                         </button>
                         <button class="category-filter" type="button" data-filter="gaming" aria-pressed="false">
                             <span>Gaming</span><span class="category-total">2</span>
-                        </button>
-                        <button class="category-filter" type="button" data-filter="pantallas" aria-pressed="false">
-                            <span>Pantallas</span><span class="category-total">2</span>
-                        </button>
-                        <button class="category-filter" type="button" data-filter="accesorios" aria-pressed="false">
-                            <span>Accesorios</span><span class="category-total">2</span>
                         </button>
                     </div>
                     <a class="sidebar-contact" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos" target="_blank" rel="noopener noreferrer">
@@ -90,6 +147,18 @@
                         <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=85" alt="Computadora de escritorio para alto rendimiento" loading="lazy"><span class="product-tag">Computación</span></div>
                         <div class="product-info"><h2>PC Workstation Ryzen 7</h2><p class="product-description">Potencia confiable para creación, multitarea y proyectos exigentes.</p><div class="price-row"><span class="old-price">$32,999 MXN</span><span class="current-price">$29,499 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20PC%20Workstation%20Ryzen%207" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
                     </article>
+                    <article class="catalog-product" data-category="computacion">
+                        <div class="product-image-wrap"><img src="https://unimarq.mx/media/catalog/product/2/8/28fdcd27bea74b165106b50a22dbe0b9eea57c39.jpg" alt="Procesador AMD Ryzen 9 9950X" loading="lazy"><span class="product-tag">Computación · Procesadores</span></div>
+                        <div class="product-info"><h2>Procesador AMD Ryzen 9 9950X</h2><p class="product-description">16 núcleos, socket AM5 y frecuencia turbo de 5.7 GHz. SKU: 100-100001277WOF.</p><div class="price-row"><span class="previous-price-note">Precio anterior no indicado</span><span class="current-price">$12,215 <small>MXN</small></span></div><a class="product-more" href="https://unimarq.mx/procesador-amd-ryzen-9-9950x-sin-disipador-y-graficos-socket-am5-16core-4-3ghz-170w-zen-5.html" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="computacion">
+                        <div class="product-image-wrap"><img src="https://unimarq.mx/media/catalog/product/a/3/a3a14a86aa03c1b248c1af452ef3cd468df46bc7_1.jpg" alt="Procesador AMD Ryzen 9 9950X3D" loading="lazy"><span class="product-tag">Computación · Procesadores</span></div>
+                        <div class="product-info"><h2>Procesador AMD Ryzen 9 9950X3D</h2><p class="product-description">16 núcleos, socket AM5 y frecuencia turbo de 5.7 GHz. SKU: 100-100000719WOF.</p><div class="price-row"><span class="previous-price-note">Precio anterior no indicado</span><span class="current-price">$14,408 <small>MXN</small></span></div><a class="product-more" href="https://unimarq.mx/procesador-amd-ryzen-9-9950x3d-sin-disipador-y-graficos-socket-am5-16core-4-3ghz-170w-zen-5.html" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="computacion">
+                        <div class="product-image-wrap"><img src="https://unimarq.mx/media/catalog/product/7/4/742bcc504c3b5efdd0c9e20b849320b6e98dd46a.jpg" alt="Procesador AMD Ryzen 9 5900XT" loading="lazy"><span class="product-tag">Computación · Procesadores</span></div>
+                        <div class="product-info"><h2>Procesador AMD Ryzen 9 5900XT</h2><p class="product-description">16 núcleos, socket AM4 y frecuencia turbo de 4.8 GHz. SKU: 100-100001581WOF.</p><div class="price-row"><span class="previous-price-note">Precio anterior no indicado</span><span class="current-price">$6,007 <small>MXN</small></span></div><a class="product-more" href="https://unimarq.mx/procesador-amd-ryzen-9-5900xt-sin-disipador-y-graficos-socket-am4-16core-3-3ghz-105w-zen-3.html" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
                     <article class="catalog-product" data-category="gaming">
                         <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=85" alt="Monitor de computadora sobre un escritorio" loading="lazy"><span class="product-tag">Gaming</span></div>
                         <div class="product-info"><h2>Monitor Gaming 27″ 165 Hz</h2><p class="product-description">Movimiento fluido y colores intensos para cada partida.</p><div class="price-row"><span class="old-price">$8,499 MXN</span><span class="current-price">$7,199 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Monitor%20Gaming%2027" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
@@ -98,21 +167,53 @@
                         <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=85" alt="Componentes de computadora para gaming" loading="lazy"><span class="product-tag">Gaming</span></div>
                         <div class="product-info"><h2>Tarjeta gráfica RTX 4060</h2><p class="product-description">Gráficos de nueva generación para jugar y crear con detalle.</p><div class="price-row"><span class="old-price">$9,999 MXN</span><span class="current-price">$8,699 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Tarjeta%20gr%C3%A1fica%20RTX%204060" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
                     </article>
-                    <article class="catalog-product" data-category="pantallas">
-                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=85" alt="Televisor de pantalla grande en una sala" loading="lazy"><span class="product-tag">Pantallas</span></div>
+                    <article class="catalog-product" data-category="tv-smart" data-parent="tv">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=85" alt="Televisor de pantalla grande en una sala" loading="lazy"><span class="product-tag">Pantallas · Disponible</span></div>
                         <div class="product-info"><h2>Smart TV 55″ 4K UHD</h2><p class="product-description">Resolución 4K y acceso sencillo a tus plataformas favoritas.</p><div class="price-row"><span class="old-price">$13,499 MXN</span><span class="current-price">$11,999 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Smart%20TV%2055%204K" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
                     </article>
-                    <article class="catalog-product" data-category="pantallas">
-                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=900&q=85" alt="Pantalla de televisión en una habitación" loading="lazy"><span class="product-tag">Pantallas</span></div>
+                    <article class="catalog-product" data-category="tv-smart" data-parent="tv">
+                        <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=900&q=85" alt="Pantalla de televisión en una habitación" loading="lazy"><span class="product-tag">Pantallas · Disponible</span></div>
                         <div class="product-info"><h2>Smart TV 43″ Full HD</h2><p class="product-description">Una pantalla versátil para tus series, películas y consolas.</p><div class="price-row"><span class="old-price">$8,799 MXN</span><span class="current-price">$7,599 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Smart%20TV%2043%20Full%20HD" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
                     </article>
-                    <article class="catalog-product" data-category="accesorios">
+                    <article class="catalog-product" data-category="tv-smart" data-parent="tv">
+                        <div class="product-image-wrap"><img src="https://i02.appmifile.com/36_item_mx/11/09/2025/d9531a461ea336d0229649a008800fe8.png?thumb=1&amp;w=800&amp;f=webp&amp;q=85" alt="Xiaomi TV A 32 2026" loading="lazy"><span class="product-tag">Pantallas · Disponible</span></div>
+                        <div class="product-info"><h2>Xiaomi TV A 32 2026</h2><p class="product-description">Televisor Xiaomi de 32 pulgadas. Agotado según la fuente consultada.</p><div class="price-row"><span class="old-price">$3,059 MXN</span><span class="current-price">$2,699 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20consultar%20disponibilidad%20del%20Xiaomi%20TV%20A%2032%202026" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="tv-smart" data-parent="tv">
+                        <div class="product-image-wrap"><img src="https://i5.walmartimages.cl/asr/9a43f59d-22c3-4670-b2ce-fc0ef60061bd.efa9bbc3d97d99b1e98c846ab6a7b805.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" alt="Pantalla Smart TV RCA de 32 pulgadas HD con Android TV" loading="lazy"><span class="product-tag">Pantallas · Disponible</span></div>
+                        <div class="product-info"><h2>RCA Smart TV 32″ HD Android TV</h2><p class="product-description">Modelo TC-LE32K-AN2401. Agotado según la fuente consultada.</p><div class="price-row"><span class="old-price">$2,599 MXN</span><span class="current-price">$2,499 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="tv-smart" data-parent="tv">
+                        <div class="product-image-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsXDNIDrzTTm-V0rZqJmsh5J7Pb8koXdxXd8KQeRvtKeQiBkcHLkmJpQ0&s=10" alt="Pantalla Smart TV JVC de 43 pulgadas Full HD con Roku" loading="lazy"><span class="product-tag">Pantallas · Disponible</span></div>
+                        <div class="product-info"><h2>JVC Smart TV 43″ Full HD Roku</h2><p class="product-description">Modelo SI43FRF con diseño Frameless. Agotado según la fuente consultada.</p><div class="price-row"><span class="old-price">$5,499 MXN</span><span class="current-price">$3,999 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="accesorios-audifonos" data-parent="accesorios">
                         <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Audífonos inalámbricos de diadema" loading="lazy"><span class="product-tag">Accesorios</span></div>
                         <div class="product-info"><h2>Audífonos Bluetooth Studio</h2><p class="product-description">Audio envolvente y comodidad para música, llamadas y trabajo.</p><div class="price-row"><span class="old-price">$2,499 MXN</span><span class="current-price">$1,999 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Aud%C3%ADfonos%20Bluetooth%20Studio" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
                     </article>
                     <article class="catalog-product" data-category="accesorios">
                         <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85" alt="Teclado mecánico para computadora" loading="lazy"><span class="product-tag">Accesorios</span></div>
                         <div class="product-info"><h2>Teclado Mecánico RGB</h2><p class="product-description">Teclas precisas, iluminación personalizable y formato compacto.</p><div class="price-row"><span class="old-price">$1,899 MXN</span><span class="current-price">$1,499 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Teclado%20Mec%C3%A1nico%20RGB" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="memorias-micro-sd" data-parent="memorias">
+                        <div class="product-image-wrap"><img src="https://dcdn-us.mitiendanube.com/stores/006/401/197/products/13-2a18720ee70ed6613117593495873789-480-0.webp" alt="Memoria Micro SD Adata de 32 GB con adaptador" loading="lazy"><span class="product-tag">Memorias SD</span></div>
+                        <div class="product-info"><h2>Micro SD Adata 32 GB Clase 10</h2><p class="product-description">Tarjeta Micro SD Adata 32GB Clase 10, ideal para fotos y videos Full HD. Resistente y rápida.</p><div class="price-row"><span class="current-price">$180 <small>MXN</small></span></div><a class="product-more" href="https://compugadget.com.mx/productos/micro-sd-adata-ausdh32guicl10ra1/" target="_blank" rel="noopener noreferrer">Ver producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="memorias-micro-sd" data-parent="memorias">
+                        <div class="product-image-wrap"><img src="https://dcdn-us.mitiendanube.com/stores/006/401/197/products/11-8d3343956c8c50af1417593485497842-480-0.webp" alt="Memoria Micro SD Adata de 64 GB con adaptador" loading="lazy"><span class="product-tag">Memorias SD</span></div>
+                        <div class="product-info"><h2>Micro SD Adata Premier 64 GB</h2><p class="product-description">Micro SD Adata Clase 10, ideal para video Full HD y aplicaciones rápidas.</p><div class="price-row"><span class="current-price">$225 <small>MXN</small></span></div><a class="product-more" href="https://compugadget.com.mx/productos/micro-sd-premier-adata-ausdx64guicl10ra1/" target="_blank" rel="noopener noreferrer">Ver producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="memorias-micro-sd" data-parent="memorias">
+                        <div class="product-image-wrap"><img src="https://dcdn-us.mitiendanube.com/stores/006/401/197/products/10-30b18a88eba8b1caba17592605846332-480-0.webp" alt="Memoria Micro SD Adata de 128 GB con adaptador" loading="lazy"><span class="product-tag">Memorias SD</span></div>
+                        <div class="product-info"><h2>Micro SD Adata Premier 128 GB</h2><p class="product-description">Micro SD Adata rápida y duradera, ideal para fotos, videos y aplicaciones.</p><div class="price-row"><span class="current-price">$325 <small>MXN</small></span></div><a class="product-more" href="https://compugadget.com.mx/productos/ausdx128guicl10a1/" target="_blank" rel="noopener noreferrer">Ver producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="memorias-micro-sd" data-parent="memorias">
+                        <div class="product-image-wrap"><img src="https://dcdn-us.mitiendanube.com/stores/006/401/197/products/13-294b79a8b12ffbd00e17709365527811-480-0.webp" alt="Memoria MicroSD Kingston Canvas Select Plus de 64 GB" loading="lazy"><span class="product-tag">Memorias SD</span></div>
+                        <div class="product-info"><h2>Kingston Canvas Select Plus 64 GB</h2><p class="product-description">MicroSD Kingston Canvas Select Plus A1 UHS-I, rápida y confiable para tu smartphone.</p><div class="price-row"><span class="current-price">$270 <small>MXN</small></span></div><a class="product-more" href="https://compugadget.com.mx/productos/micro-sd-sdcs3-64gb/" target="_blank" rel="noopener noreferrer">Ver producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="memorias-micro-sd" data-parent="memorias">
+                        <div class="product-image-wrap"><img src="https://dcdn-us.mitiendanube.com/stores/006/401/197/products/14-e5c063fb487bc2f8aa17709361703357-480-0.webp" alt="Memoria MicroSD Kingston Canvas Select Plus de 128 GB" loading="lazy"><span class="product-tag">Memorias SD</span></div>
+                        <div class="product-info"><h2>Kingston Canvas Select Plus 128 GB</h2><p class="product-description">MicroSD Kingston Canvas Select Plus A1 UHS-I, rápida y confiable para aplicaciones y video Full HD.</p><div class="price-row"><span class="current-price">$420 <small>MXN</small></span></div><a class="product-more" href="https://compugadget.com.mx/productos/micro-sd-sdcs3-128gb/" target="_blank" rel="noopener noreferrer">Ver producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
                     </article>
                 </section>
             </div>
@@ -123,8 +224,20 @@
 
     <script>
         const filterButtons = document.querySelectorAll('.category-filter');
+        const categoryExpandButtons = document.querySelectorAll('.category-expand');
         const products = document.querySelectorAll('.catalog-product');
         const productCount = document.querySelector('#product-count');
+
+        categoryExpandButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                const submenu = document.getElementById(button.getAttribute('aria-controls'));
+                const categoryName = button.previousElementSibling.querySelector('span:first-child').textContent.trim();
+                button.setAttribute('aria-expanded', String(!isExpanded));
+                button.setAttribute('aria-label', `${isExpanded ? 'Expandir' : 'Contraer'} ${categoryName}`);
+                submenu.hidden = isExpanded;
+            });
+        });
 
         filterButtons.forEach((button) => {
             button.addEventListener('click', () => {
@@ -138,7 +251,11 @@
                 });
 
                 products.forEach((product) => {
-                    const isVisible = category === 'all' || product.dataset.category === category;
+                    const isGroupFilter = category.startsWith('group:');
+                    const group = isGroupFilter ? category.slice(6) : '';
+                    const isVisible = category === 'all'
+                        || (isGroupFilter && (product.dataset.parent === group || product.dataset.category === group))
+                        || (!isGroupFilter && product.dataset.category === category);
                     product.hidden = !isVisible;
                     if (isVisible) visibleCount += 1;
                 });

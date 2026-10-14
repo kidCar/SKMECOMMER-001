@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="/css/style.css">    
 </head>
 <body class="catalog-page">
     <nav class="navbar navbar-expand-lg navbar-light tech-navbar sticky-top shadow-sm py-3">
@@ -22,13 +22,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 align-lg-items-center mx-auto">
-                    <li class="nav-item"><a class="nav-link px-2" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active px-2" aria-current="page" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href="index.html#contacto">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href="index.html#lista-precios">Lista de precios</a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href="index.html#sucursales">Sucursales</a></li>
-                    <li class="nav-item"><a class="nav-link px-2 fw-semibold text-warning" href="index.html#cotizar-ram">COTIZAR SOPORTE <span class="badge bg-danger text-white rounded-circle">!</span></a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href="index.html#garantia">Políticas de Garantía</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="../index.html#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="../index.html#lista-precios">Lista de precios</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="../index.html#sucursales">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 fw-semibold text-warning" href="../index.html#cotizar-ram">COTIZAR SOPORTE <span class="badge bg-danger text-white rounded-circle">!</span></a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="politicas-de-garantia.html">Políticas de Garantía</a></li>
                 </ul>
                 <form class="d-flex align-items-center search-form mt-3 mt-lg-0" role="search" onsubmit="event.preventDefault();">
                     <div class="input-group">
@@ -50,7 +50,7 @@
                     <h1>Encuentra tu próximo equipo</h1>
                     <p class="catalog-intro">Tecnología para trabajar, jugar y disfrutar. Elige una categoría para explorar.</p>
                 </div>
-                <p class="catalog-count" aria-live="polite"><span id="product-count">19</span> productos</p>
+                <p class="catalog-count" aria-live="polite"><span id="product-count">22</span> productos</p>
             </header>
 
             <div class="catalog-layout">
@@ -61,7 +61,7 @@
                     </div>
                     <div class="category-options" role="group" aria-label="Filtrar por categoría">
                         <button class="category-filter is-active" type="button" data-filter="all" aria-pressed="true">
-                            <span>Todos los productos</span><span class="category-total">19</span>
+                            <span>Todos los productos</span><span class="category-total">22</span>
                         </button>
                         <button class="category-filter" type="button" data-filter="celulares" aria-pressed="false">
                             <span>Celulares</span><span class="category-total">0</span>
@@ -104,12 +104,12 @@
                         <div class="category-group">
                             <div class="category-group-heading">
                                 <button class="category-filter" type="button" data-filter="group:smartwatch" aria-pressed="false">
-                                    <span>SmartWatch</span><span class="category-total">0</span>
+                                    <span>SmartWatch</span><span class="category-total">3</span>
                                 </button>
                                 <button class="category-expand" type="button" aria-label="Expandir SmartWatch" aria-expanded="false" aria-controls="submenu-smartwatch"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
                             </div>
                             <div class="category-submenu" id="submenu-smartwatch" hidden>
-                                <button class="category-filter" type="button" data-filter="smartwatch-xiaomi" aria-pressed="false"><span>Xiaomi</span><span class="category-total">0</span></button>
+                                <button class="category-filter" type="button" data-filter="smartwatch-xiaomi" aria-pressed="false"><span>Xiaomi</span><span class="category-total">3</span></button>
                             </div>
                         </div>
                         <div class="category-group">
@@ -187,6 +187,18 @@
                         <div class="product-image-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsXDNIDrzTTm-V0rZqJmsh5J7Pb8koXdxXd8KQeRvtKeQiBkcHLkmJpQ0&s=10" alt="Pantalla Smart TV JVC de 43 pulgadas Full HD con Roku" loading="lazy"><span class="product-tag">Pantallas · Disponible</span></div>
                         <div class="product-info"><h2>JVC Smart TV 43″ Full HD Roku</h2><p class="product-description">Modelo SI43FRF con diseño Frameless. Agotado según la fuente consultada.</p><div class="price-row"><span class="old-price">$5,499 MXN</span><span class="current-price">$3,999 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
                     </article>
+                    <article class="catalog-product" data-category="smartwatch-xiaomi" data-parent="smartwatch">
+                        <div class="product-image-wrap"><img src="https://i02.appmifile.com/333_item_mx/12/05/2026/c60b4f5a8c09882b227929c86e1f226e.png?thumb=1&amp;w=800&amp;q=85" alt="Reloj inteligente REDMI Watch 6" loading="lazy"><span class="product-tag">SmartWatch · Xiaomi</span></div>
+                        <div class="product-info"><h2>REDMI Watch 6</h2><p class="product-description">Reloj inteligente REDMI. Consulta colores y disponibilidad antes de tu compra.</p><div class="price-row"><span class="current-price">$1,699 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20REDMI%20Watch%206" target="_blank" rel="noopener noreferrer">Consultar producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="smartwatch-xiaomi" data-parent="smartwatch">
+                        <div class="product-image-wrap"><img src="https://i02.appmifile.com/48_item_mx/23/10/2024/6583bc09fd553054baeffa4e39a839bf.png?thumb=1&amp;w=800&amp;q=85" alt="Reloj inteligente REDMI Watch 5 Active" loading="lazy"><span class="product-tag">SmartWatch · Xiaomi</span></div>
+                        <div class="product-info"><h2>REDMI Watch 5 Active</h2><p class="product-description">Reloj inteligente REDMI. Consulta disponibilidad antes de tu compra.</p><div class="price-row"><span class="current-price">$649 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20REDMI%20Watch%205%20Active" target="_blank" rel="noopener noreferrer">Consultar producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+                    <article class="catalog-product" data-category="smartwatch-xiaomi" data-parent="smartwatch">
+                        <div class="product-image-wrap"><img src="https://i02.appmifile.com/715_operatorx_operatorx_xm/18/08/2026/4c6a1f61439fc60b4c97b36db20d8200.png?thumb=1&amp;w=800&amp;q=85" alt="Reloj inteligente REDMI Watch 6 Active" loading="lazy"><span class="product-tag">SmartWatch · Xiaomi</span></div>
+                        <div class="product-info"><h2>REDMI Watch 6 Active</h2><p class="product-description">Reloj inteligente REDMI. Consulta colores y disponibilidad antes de tu compra.</p><div class="price-row"><span class="current-price">$709 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20REDMI%20Watch%206%20Active" target="_blank" rel="noopener noreferrer">Consultar producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
                     <article class="catalog-product" data-category="accesorios-audifonos" data-parent="accesorios">
                         <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Audífonos inalámbricos de diadema" loading="lazy"><span class="product-tag">Accesorios</span></div>
                         <div class="product-info"><h2>Audífonos Bluetooth Studio</h2><p class="product-description">Audio envolvente y comodidad para música, llamadas y trabajo.</p><div class="price-row"><span class="old-price">$2,499 MXN</span><span class="current-price">$1,999 <small>MXN</small></span></div><a class="product-more" href="https://wa.me/525519389472?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Aud%C3%ADfonos%20Bluetooth%20Studio" target="_blank" rel="noopener noreferrer">Más información <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
@@ -223,7 +235,7 @@
     <footer class="catalog-footer"><div class="container-fluid catalog-container"><span>© 2026 TechKMarket</span><a href="index.html#contacto">Contacto y sucursales</a></div></footer>
 
     <script>
-        const filterButtons = document.querySelectorAll('.category-filter');
+        const filterButtons = document.querySelectorAll('button.category-filter');
         const categoryExpandButtons = document.querySelectorAll('.category-expand');
         const products = document.querySelectorAll('.catalog-product');
         const productCount = document.querySelector('#product-count');

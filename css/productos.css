@@ -123,6 +123,10 @@
     transition: background-color 150ms ease, color 150ms ease;
 }
 
+.category-link {
+    text-decoration: none;
+}
+
 .category-filter:hover,
 .category-filter.is-active {
     background: #fff4c2;
@@ -318,6 +322,12 @@
 .current-price small {
     font-size: 0.68rem;
     font-weight: 500;
+}
+
+.product-shipping {
+    color: #33704b;
+    font-size: 0.78rem;
+    font-weight: 600;
 }
 
 .product-more {
